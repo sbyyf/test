@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<style>
+	#scene {
+		background-image: url(img/bg.jpg);
+        width:100%;
+		height: 600px;
+	}
+	.p2g {
+		animation: gj2 .7s steps(4) infinite;
+	}
+	.p2b {
+		animation: gj2 .7s steps(4) infinite;
+	}
+	.p2d {
+		animation: gj2 .7s steps(1) infinite;
+	}
+	.p2a {
+		animation: gj2 .7s steps(5);
+	}
+	.p2n {
+		animation: gj2 .5s steps(5) infinite;
+	}
+	.p1g {
+		animation: gj1 .7s steps(7) infinite;
+	}
+	.p1b {
+		animation:gj1 .7s steps(7) infinite;
+	}
+	.p1d {
+		animation: gj1 .7s steps(1) infinite;
+	}
+	.p1a {
+		animation: gj1 .7s steps(7);
+	}
+	.p1n {
+		animation: gj1 .5s steps(2) infinite;
+	}
+	#p1 {
+		left: 20px;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		top: 380px;
+		background-size: 300% 100%;
+		background-image: url(img/p1n.png);
+	}
+	#p2 {
+		right: 20px;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		top: 380px;
+		background-size: 600% 100%;
+		background-image: url(img/p2n.png);
+	}
+	@keyframes gj1 
+	{
+		0% {
+			background-position: 0% 0%;
+		}
+
+		100% {
+			background-position: 100% 0%;
+		}
+	}
+	@keyframes gj2 {
+		0% {
+			background-position: 0% 0%;
+		}
+
+		100% {
+			background-position: 100% 0%;
+		}
+	}
+</style>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="scene">
+        <div id="p1" class="p1n"></div>
+        <div id="p2" class="p2n"></div>
+    </div>
+</body>
+<script type="text/javascript" src="p1.js"></script>
+</html>
